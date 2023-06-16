@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main {
+    width: calc(100% - 250px);
+    height: 100vh;
+  }
+
+  .main.active {
+    width: 100%;
+  }
+
+  .icon {
+    position: relative;
+  }
+
+  .icon::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background-color: red;
+  }
+
+  .sidebar-item {
+    @apply py-[10px] hover:bg-bgHover mt-3  rounded-md duration-500 text-[18px] text-[#363535];
+  }
+
+  .card {
+    box-shadow: 10px 10px 30px #a09d9d, 20px 20px 60px #ffffff;
+  }
+}

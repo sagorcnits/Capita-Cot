@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capita Cot</title>
+    <link rel="stylesheet" href="./dist/styles/output.css" />
+    <!-- Font awesome cd link -->
+    <script
+      src="https://kit.fontawesome.com/95f6be8030.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font awesome cd link -->
+  </head>
+  <body class="bg-[#FAFDFF]">
+    <main class="flex">
+      <!-- sidber -->
+      <aside
+        class="md:w-[250px] h-[100vh] bg-white shadow-md z-10 duration-500 sidebar p-4 relative"
+      >
+        <!-- company name -->
+        <div class="flex justify-around items-center">
+          <div id="logo" class="w-[25%]">
+            <img src="image/capita-logo.png" alt="capita logo" />
+          </div>
+          <div id="capita">
+            <span class="text-[#1B9CFC] text-[27px] font-bold pr-2">Capita</span
+            ><span class="text-[#FA8231] text-[27px] font-bold">Cot</span>
+          </div>
+
+          <p
+            class="text-[15px] text-end text-[#585858] absolute right-[-10px] top-[10px]"
+            id="close"
+          >
+            <a href="#">
+              <i class="fa-solid fa-angles-left"></i>
+            </a>
+          </p>
+
+          <p
+            class="text-[15px] text-end text-[#585858] absolute right-[-10px] top-[10px] hidden"
+            id="open"
+          >
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </p>
+        </div>
+        <!-- company name -->
+        <!-- sidebar item -->
+        <div class="sidebar-item">
+          <a href="#">
+            <span class="pl-4 text-2xl text-gray-500"
+              ><i class="fa-solid fa-chart-line"></i
+            ></span>
+            <span id="dashboard">
+              <span class="pl-2">Dashboard</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="sidebar-item">
+          <a href="#">
+            <span class="pl-4 text-2xl text-gray-500"
+              ><i class="fa-solid fa-camera-retro"></i
+            ></span>
+            <span id="project"> <span class="pl-2">Project</span></span>
+          </a>
+        </div>
+
+        <div class="sidebar-item">
+          <a href="#">
+            <span class="pl-4 text-2xl text-gray-500"
+              ><i class="fa-regular fa-circle-user"></i
+            ></span>
+            <span id="user"> <span class="pl-2">Users</span></span>
+          </a>
+        </div>
+
+        <div class="sidebar-item">
+          <a href="#">
+            <span class="pl-4 text-2xl text-gray-500"
+              ><i class="fa-solid fa-gear"></i
+            ></span>
+            <span id="setting"><span class="pl-2">Setting</span></span>
+          </a>
+        </div>
+
+        <div class="sidebar-item">
+          <a href="#">
+            <span class="pl-4 text-2xl text-gray-500"
+              ><i class="fa-solid fa-file-invoice"></i
+            ></span>
+            <span id="acount"><span class="pl-2">Account</span></span>
+          </a>
+        </div>
+
+        <div class="sidebar-item">
+          <a href="#">
+            <span class="pl-4 text-2xl text-gray-500"
+              ><i class="fa-solid fa-right-from-bracket"></i
+            ></span>
+            <span id="logout"> <span class="pl-2">Log out</span></span>
+          </a>
+        </div>
+        <!-- sidebar item -->
+      </aside>
+      <!-- sidber -->
+      <!-- main Conetnt -->
+      <section class="main mainContent">
+        <!-- navbar -->
+        <nav
+          class="flex justify-between items-center py-[10px] px-[20px] bg-white shadow-md text-[#585858]"
+        >
+          <!-- search bar -->
+
+          <div class="flex">
+            <div class="bg-bgHover py-[8px] ml-10 rounded-md md:flex hidden">
+              <span class="text-text-color px-[25px]">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="bg-transparent focus:outline-none"
+                  size="40"
+                />
+
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </span>
+            </div>
+          </div>
+          <!-- search bar -->
+          <div class="flex items-center">
+            <div class="hidden md:flex">
+              <span class="mx-5 text-[30px] text-gray-400"
+                ><a href="#"><i class="fa-solid fa-gear"></i></a>
+              </span>
+              <span class="mx-5 text-[30px]"
+                ><a href="#"><i class="fa-solid fa-language"></i></a>
+              </span>
+            </div>
+            <span class="mx-5 text-[30px] icon"
+              ><a href="#"><i class="fa-regular fa-bell"></i></a>
+            </span>
+
+            <img src="image/profile-logo.png" alt="profile logo" />
+          </div>
+        </nav>
+        <!-- navber -->
+        <div class="pt-4 pl-8 font-bold">Dashboard</div>
+        <div class="w-[90%] mx-auto md:grid md:grid-cols-4 gap-8 pt-4">
+          <div class="bg-[#BFE4FF] p-4 h-[150px] mt-4 md:mt-0 card">
+            <p class="text-2xl text-balck font-bold">$65,549</p>
+            <p class="pt-2 text-textColor font-bold">Total Earning</p>
+            <p class="pt-4">2.9% Up from past month</p>
+          </div>
+          <div class="bg-[#BFE4FF] p-4 h-[150px] mt-4 md:mt-0">
+            <p class="text-2xl text-balck font-bold">$65,549</p>
+            <p class="pt-2 text-textColor font-bold">Total Earning</p>
+            <p class="pt-4">2.9% Up from past month</p>
+          </div>
+          <div class="bg-[#BFE4FF] p-4 h-[150px] mt-4 md:mt-0">
+            <p class="text-2xl text-balck font-bold">$65,549</p>
+            <p class="pt-2 text-textColor font-bold">Total Earning</p>
+            <p class="pt-4">2.9% Up from past month</p>
+          </div>
+          <div class="bg-[#BFE4FF] p-4 h-[150px] mt-4 md:mt-0">
+            <p class="text-2xl text-balck font-bold">$65,549</p>
+            <p class="pt-2 text-textColor font-bold">Total Earning</p>
+            <p class="pt-4">2.9% Up from past month</p>
+          </div>
+        </div>
+      </section>
+      <!-- main content -->
+    </main>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <!-- JavaScript -->
+  </body>
+</html>
