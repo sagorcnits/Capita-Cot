@@ -5,11 +5,6 @@
 @layer components {
   .main {
     width: 100%;
-    height: 100vh;
-  }
-
-  .main.active {
-    width: 100%;
   }
 
   .icon {
@@ -32,6 +27,38 @@
   }
 
   .card {
-    box-shadow: 10px 10px 30px #a09d9d, 20px 20px 60px #ffffff;
+    box-shadow: 3px 3px 5px #d1cece, -3px -3px 5px #d1cece;
+    border-radius: 8px;
+  }
+
+  .mobile-bar {
+    @apply w-[220px] h-[100vh] bg-white shadow-md z-10 duration-500 absolute left-[-260px] top-0 md:hidden py-2;
+  }
+
+  .progress {
+    @apply w-[90%] h-2 m-auto bg-white mt-8 rounded-full relative;
+  }
+
+  .progress::before {
+    content: "65%";
+    position: absolute;
+    right: 0;
+    top: -21px;
+  }
+
+  .progress::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0.5rem;
+    width: 70%;
+    background-color: #fa8231;
+    border-radius: 5px;
+  }
+}
+
+@layer components {
+  #member td {
+    padding: 10px 0;
   }
 }
