@@ -1,7 +1,8 @@
-const closeBtn = document.querySelector("#close");
+const closebt = document.getElementById('close');
 const openBtn = document.querySelector("#open");
 const mainContent = document.querySelector(".main-content");
 const sidebar = document.querySelector(".sidebar");
+const barSide = document.querySelector(".barSide");
 const dashboard = document.querySelector("#dashboard");
 const project = document.querySelector("#project");
 const user = document.querySelector("#user");
@@ -25,25 +26,47 @@ closebar.addEventListener("click" , () => {
 
 })
 
-closeBtn.addEventListener("click", () => {
-    sidebar.style.width = "100px";
-    logo.style.width = "100%";
-    dashboard.style.display = "none";
-    project.style.display = "none";
+// closebt.addEventListener("click", () => {
+//     sidebar.style.width = "100px";
+//     barSide.style.width = "100px";
+//     logo.style.width = "100%";
+//     dashboard.style.display = "none";
+//     project.style.display = "none";
+//     user.style.display = "none";
+//     setting.style.display = "none";
+//     acount.style.display = "none";
+//     logout.style.display = "none";
+//     capita.style.display = "none";
+//     closebt.style.display = "none";
+//     openBtn.style.display = "inline-flex";
+//     mainContent.classList.add("active");
+//     console.log('hello');
+   
+// })
+
+
+
+closebt.addEventListener("click", () => {
+sidebar.style.width = "100px";
+barSide.style.width = "100px";
+closebt.style.display = "none";
+openBtn.style.display = "inline-flex";
+logo.style.width = "100%";
+capita.style.display = "none";
+dashboard.style.display = "none";
+project.style.display = "none";
     user.style.display = "none";
     setting.style.display = "none";
     acount.style.display = "none";
-    logout.style.display = "none";
-    capita.style.display = "none";
-    closeBtn.style.display = "none";
-    openBtn.style.display = "inline-flex";
-    mainContent.classList.add("active");
-   
+        logout.style.display = "none";
+  console.log('sagor')
+
 })
 
 openBtn.addEventListener("click", () => {
     sidebar.style.width = "250px";
-    mainContent.classList.remove("active");
+  barSide.style.width = "250px";
+    // mainContent.classList.remove("active");
      dashboard.style.display = "inline-flex";
      project.style.display = "inline-flex";
      user.style.display = "inline-flex";
@@ -51,7 +74,7 @@ openBtn.addEventListener("click", () => {
      acount.style.display = "inline-flex";
      logout.style.display = "inline-flex";
      capita.style.display = "inline-flex";
-     closeBtn.style.display = "inline-flex";
+     closebt.style.display = "inline-flex";
      openBtn.style.display = "none";
      logo.style.width = "45%";
 })
