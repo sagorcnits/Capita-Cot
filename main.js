@@ -1,77 +1,66 @@
-const closebt = document.getElementById("close");
+ const closebt = document.getElementById("close");
+ const sidebar = document.querySelector(".sidebar");
+const logo = document.querySelector("#logo");
+const capita = document.querySelector("#capita");
 const openBtn = document.querySelector("#open");
-const mainContent = document.querySelector(".main-content");
-const sidebar = document.querySelector(".sidebar");
-const barSide = document.querySelector(".barSide");
-const dashboard = document.querySelector("#dashboard");
-const project = document.querySelector("#project");
-const user = document.querySelector("#user");
+// const mainContent = document.querySelector(".main-content");
+// const barSide = document.querySelector(".barSide");
+ const dashboard = document.querySelector("#dashboard");
+ const project = document.querySelector("#project");
+ const user = document.querySelector("#user");
 const setting = document.querySelector("#setting");
 const acount = document.querySelector("#acount");
 const logout = document.querySelector("#logout");
-const capita = document.querySelector("#capita");
-const logo = document.querySelector("#logo");
 
-const bar = document.querySelector("#bar");
-const mobilebar = document.querySelector(".mobile-bar");
-const closebar = document.querySelector("#closebar");
 
-bar.addEventListener("click", () => {
-  mobilebar.style.left = "0";
-});
+// const bar = document.querySelector("#bar");
+// const mobilebar = document.querySelector(".mobile-bar");
+// const closebar = document.querySelector("#closebar");
 
-closebar.addEventListener("click", () => {
-  mobilebar.style.left = "-250px";
-});
+// bar.addEventListener("click", () => {
+//   mobilebar.style.left = "0";
+// });
 
-// closebt.addEventListener("click", () => {
-//     sidebar.style.width = "100px";
-//     barSide.style.width = "100px";
-//     logo.style.width = "100%";
-//     dashboard.style.display = "none";
-//     project.style.display = "none";
-//     user.style.display = "none";
-//     setting.style.display = "none";
-//     acount.style.display = "none";
-//     logout.style.display = "none";
-//     capita.style.display = "none";
-//     closebt.style.display = "none";
-//     openBtn.style.display = "inline-flex";
-//     mainContent.classList.add("active");
-//     console.log('hello');
-
-// })
+// closebar.addEventListener("click", () => {
+//   mobilebar.style.left = "-250px";
+// });
 
 closebt.addEventListener("click", () => {
-  sidebar.style.width = "100px";
-  barSide.style.width = "100px";
-  closebt.style.display = "none";
-  openBtn.style.display = "inline-flex";
-  logo.style.width = "100%";
-  capita.style.display = "none";
-  dashboard.style.display = "none";
-  project.style.display = "none";
-  user.style.display = "none";
-  setting.style.display = "none";
-  acount.style.display = "none";
-  logout.style.display = "none";
-  console.log("sagor");
-});
+     sidebar.style.width = "100px";
+     logo.style.width = "100%";
+     capita.style.display = "none";
+    // barSide.style.width = "100px";
+    
+    dashboard.style.display = "none";
+     project.style.display = "none";
+     user.style.display = "none";
+    setting.style.display = "none";
+    acount.style.display = "none";
+     logout.style.display = "none";
+    
+    closebt.style.display = "none";
+    openBtn.style.display = "inline-flex";
+     mainContent.classList.add("active");
+   
+
+})
+
+
 
 openBtn.addEventListener("click", () => {
-  sidebar.style.width = "250px";
-  barSide.style.width = "250px";
+   sidebar.style.width = "250px";
+  // barSide.style.width = "250px";
   // mainContent.classList.remove("active");
   dashboard.style.display = "inline-flex";
   project.style.display = "inline-flex";
   user.style.display = "inline-flex";
   setting.style.display = "inline-flex";
-  acount.style.display = "inline-flex";
+   acount.style.display = "inline-flex";
   logout.style.display = "inline-flex";
   capita.style.display = "inline-flex";
-  closebt.style.display = "inline-flex";
+   closebt.style.display = "inline-flex";
   openBtn.style.display = "none";
-  logo.style.width = "45%";
+   logo.style.width = "45%";
 });
 
 //chert js

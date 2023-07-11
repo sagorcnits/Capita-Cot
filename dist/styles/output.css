@@ -617,6 +617,10 @@ video {
   padding: 10px 0;
 }
 
+.anim {
+  transition: all 0.7s;
+}
+
 .fixed {
   position: fixed;
 }
@@ -635,6 +639,18 @@ video {
 
 .top-\[10px\] {
   top: 10px;
+}
+
+.top-\[5px\] {
+  top: 5px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .m-auto {
@@ -719,16 +735,16 @@ video {
   width: 250px;
 }
 
+.w-\[27\%\] {
+  width: 27%;
+}
+
 .w-\[40px\] {
   width: 40px;
 }
 
 .w-\[95\%\] {
   width: 95%;
-}
-
-.w-\[220px\] {
-  width: 220px;
 }
 
 .table-auto {
@@ -791,6 +807,11 @@ video {
   background-color: rgb(209 235 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -817,6 +838,11 @@ video {
 .px-\[25px\] {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-\[10px\] {
@@ -983,6 +1009,10 @@ video {
 }
 
 @media (min-width: 1000px) {
+  .md\:fixed {
+    position: fixed;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }

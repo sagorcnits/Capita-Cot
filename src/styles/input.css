@@ -61,4 +61,8 @@
   #member td {
     padding: 10px 0;
   }
+
+  .anim {
+    transition: all 0.7s;
+  }
 }
