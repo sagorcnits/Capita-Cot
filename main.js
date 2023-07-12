@@ -3,7 +3,7 @@
 const logo = document.querySelector("#logo");
 const capita = document.querySelector("#capita");
 const openBtn = document.querySelector("#open");
-// const mainContent = document.querySelector(".main-content");
+ const mainContent = document.querySelector(".main-content");
 // const barSide = document.querySelector(".barSide");
  const dashboard = document.querySelector("#dashboard");
  const project = document.querySelector("#project");
@@ -13,17 +13,17 @@ const acount = document.querySelector("#acount");
 const logout = document.querySelector("#logout");
 
 
-// const bar = document.querySelector("#bar");
-// const mobilebar = document.querySelector(".mobile-bar");
-// const closebar = document.querySelector("#closebar");
+const bar = document.querySelector("#bar");
+const mobilebar = document.querySelector(".mobile-bar");
+const closebar = document.querySelector("#closebar");
 
-// bar.addEventListener("click", () => {
-//   mobilebar.style.left = "0";
-// });
+bar.addEventListener("click", () => {
+  mobilebar.style.left = "0";
+});
 
-// closebar.addEventListener("click", () => {
-//   mobilebar.style.left = "-250px";
-// });
+closebar.addEventListener("click", () => {
+  mobilebar.style.left = "-250px";
+});
 
 closebt.addEventListener("click", () => {
      sidebar.style.width = "100px";
@@ -50,7 +50,7 @@ closebt.addEventListener("click", () => {
 openBtn.addEventListener("click", () => {
    sidebar.style.width = "250px";
   // barSide.style.width = "250px";
-  // mainContent.classList.remove("active");
+ mainContent.classList.remove("active");
   dashboard.style.display = "inline-flex";
   project.style.display = "inline-flex";
   user.style.display = "inline-flex";

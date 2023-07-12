@@ -645,14 +645,6 @@ video {
   top: 5px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -1009,10 +1001,6 @@ video {
 }
 
 @media (min-width: 1000px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
   }
